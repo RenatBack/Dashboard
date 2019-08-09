@@ -1,0 +1,44 @@
+body {
+  background: #F7F8FC;
+  font-family: Poppins; }
+
+.wrapper {
+  max-width: 1089px;
+  max-height: 35px;
+  margin: 0 auto;
+  width: 90%; }
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.dash {
+  font-size: 24px;
+  font-weight: 500;
+  color: #192A3E; }
+
+.filterbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 200px; }
+
+.filter {
+  font-size: 12px;
+  color: #7B818E; }
+
+.shared {
+  color: #2E6CFE; }
+
+.whitex {
+  width: 35px;
+  height: 35px;
+  background: #0148F5;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0px 4px 10px rgba(0, 75, 255, 0.24);
+  margin-left: 20px; }
+
+/*# sourceMappingURL=styles-compiled.css.map */
