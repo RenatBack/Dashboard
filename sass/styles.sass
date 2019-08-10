@@ -1,4 +1,5 @@
 @import "variables"
+@import "navmenu"
 
 body
 	background: #F7F8FC
@@ -12,6 +13,7 @@ body
 	display: flex
 	align-items: center
 	justify-content: space-between
+	margin-bottom: 20px
 .dash
 	font-size: 24px
 	font-weight: 500
@@ -35,5 +37,44 @@ body
 	border: 0
 	box-shadow: 0px 4px 10px rgba(0, 75, 255, 0.24)
 	margin-left: 20px
+.navmenu
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background: $color-back
+.navmenu::after
+	position: absolute
+	content: ''
+	display: block
+	width: 88%
+	height: 1px
+	background: $color-line
+	margin-top: 15px
+.kparsericons
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 10px
+.buttonkparser
+	border-radius: 50%
+	background: $color-button-nav
+	color: $color-button-text-nav
+	font-size: 13px
+	font-weight: 900
+	border: 0
+.ssilkanav
+	text-decoration: none
+	color: $color-ssilka-black
+	margin-left: 9px
+.icons
+	margin-left: 10px
+.dropdown_menu
+	position: absolute
+	display: none
+.filters_header
+	position: relative
+.filters_header:hover .dropdown_menu
+	display: block
+.dropdown_menu
+	font-size: 12px
 	
-		

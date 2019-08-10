@@ -11,7 +11,8 @@ body {
 .header .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 20px; }
 
 .dash {
   font-size: 24px;
@@ -40,5 +41,55 @@ body {
   border: 0;
   box-shadow: 0px 4px 10px rgba(0, 75, 255, 0.24);
   margin-left: 20px; }
+
+.navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF; }
+
+.navmenu::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 88%;
+  height: 1px;
+  background: #F7F9FA;
+  margin-top: 15px; }
+
+.kparsericons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.buttonkparser {
+  border-radius: 50%;
+  background: #1A2E3B;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 900;
+  border: 0; }
+
+.ssilkanav {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 9px; }
+
+.icons {
+  margin-left: 10px; }
+
+.dropdown_menu {
+  position: absolute;
+  display: none; }
+
+.filters_header {
+  position: relative; }
+
+.filters_header:hover .dropdown_menu {
+  display: block; }
+
+.dropdown_menu {
+  font-size: 12px; }
 
 /*# sourceMappingURL=styles-compiled.css.map */
