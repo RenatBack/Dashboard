@@ -4,6 +4,7 @@
 body
 	background: #F7F8FC
 	font-family: $shrift
+	margin: 0
 .wrapper
 	max-width: 1089px
 	max-height: 35px
@@ -27,6 +28,7 @@ body
 .filter
 	font-size: 12px
 	color: $color-text-grey
+	cursor: pointer
 .shared
 	color: $color-text-blue
 .whitex
@@ -37,44 +39,77 @@ body
 	border: 0
 	box-shadow: 0px 4px 10px rgba(0, 75, 255, 0.24)
 	margin-left: 20px
+	&:hover
+		background: $color-button2
+		-webkit-transform: scale(1.2)
+		-ms-transform: scale(1.2)
+		transform: scale(1.2)
+		transition-duration: 0.5s
 .navmenu
 	display: flex
 	align-items: center
 	justify-content: space-between
 	background: $color-back
-.navmenu::after
-	position: absolute
-	content: ''
-	display: block
-	width: 88%
-	height: 1px
-	background: $color-line
-	margin-top: 15px
+	border-radius-top-left: 5px
+	border-radius-top-right: 5px
+	padding: 20px 30px
+	border-bottom: 1px solid $color-line
 .kparsericons
 	display: flex
 	align-items: center
 	justify-content: space-between
 	margin-bottom: 10px
+	text-decoration: none
 .buttonkparser
-	border-radius: 50%
 	background: $color-button-nav
 	color: $color-button-text-nav
 	font-size: 13px
 	font-weight: 900
 	border: 0
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	-moz-border-radius: 50%
+	-webkit-border-radius: 50%
+	-khtml-border-radius: 50%
+	margin-right: 10px
+	text-align: center
 .ssilkanav
 	text-decoration: none
 	color: $color-ssilka-black
 	margin-left: 9px
 .icons
 	margin-left: 10px
-.dropdown_menu
-	position: absolute
-	display: none
 .filters_header
 	position: relative
 .filters_header:hover .dropdown_menu
 	display: block
 .dropdown_menu
+	position: absolute
+	display: none
 	font-size: 12px
-	
+	background: white
+	box-shadow: 0 2px 15px rgba(0,0,0,.06)
+	border-radius: 3px
+	z-index: 10
+.dropdown_menu li a
+	color: $color-ssilka
+	text-decoration: none
+	&:hover
+		color: $color-ssilka2
+.maininfo
+	display: flex
+	flex-direction: row
+	background: $color-back
+	border-radius-bottom-left: 5px
+	border-radius-bottom-right: 5px
+	padding: 20px 30px
+
+.web
+	width: 20%
+.rank
+	width: 30%
+.last
+	width: 20%
+.traffic
+	width: 30%
