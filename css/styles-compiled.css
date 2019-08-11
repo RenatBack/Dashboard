@@ -141,8 +141,23 @@ ul {
   background: #FFFFFF;
   border-radius: 5px; }
 
+.maininfo h1 {
+  color: #818E9B;
+  font-size: 11px;
+  font-weight: 500; }
+
 .web {
   width: 20%; }
+
+.bigone {
+  font-size: 56px;
+  font-weight: 500;
+  color: #2ED47A; }
+
+.four {
+  font-size: 15px;
+  font-weight: 500;
+  color: #DD4C3A; }
 
 .rank {
   width: 30%; }
@@ -152,5 +167,36 @@ ul {
 
 .traffic {
   width: 30%; }
+
+.greyones {
+  font-size: 12px;
+  color: #334D6E; }
+
+.redones {
+  font-size: 12px;
+  color: #DD4C3A; }
+
+.greenones {
+  font-size: 12px;
+  color: #42C697; }
+
+.blueone {
+  font-size: 12px;
+  color: #1FA2F2; }
+
+.navyblueones {
+  font-size: 12px;
+  color: #004BFF; }
+
+.yellowone {
+  font-size: 12px;
+  color: #F18F1C; }
+
+.wed {
+  font-size: 10px;
+  color: #707683; }
+
+li {
+  text-align: justify; }
 
 /*# sourceMappingURL=styles-compiled.css.map */
