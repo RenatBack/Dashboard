@@ -9,6 +9,9 @@ body {
   margin: 0 auto;
   width: 90%; }
 
+.header {
+  padding-top: 20px; }
+
 .header .wrapper {
   display: flex;
   align-items: center;
@@ -18,7 +21,8 @@ body {
 .dash {
   font-size: 24px;
   font-weight: 500;
-  color: #192A3E; }
+  color: #192A3E;
+  margin: 0; }
 
 .filterbutton {
   display: flex;
@@ -55,8 +59,6 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #FFFFFF;
-  border-radius-top-left: 5px;
-  border-radius-top-right: 5px;
   padding: 20px 30px;
   border-bottom: 1px solid #F7F9FA; }
 
@@ -66,6 +68,8 @@ body {
   justify-content: space-between;
   margin-bottom: 10px;
   text-decoration: none; }
+  .kparsericons:hover {
+    color: blue; }
 
 .buttonkparser {
   background: #1A2E3B;
@@ -80,7 +84,9 @@ body {
   -webkit-border-radius: 50%;
   -khtml-border-radius: 50%;
   margin-right: 10px;
-  text-align: center; }
+  text-align: center;
+  background: url("https://www.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.jpg");
+  background-size: cover; }
 
 .ssilkanav {
   text-decoration: none;
@@ -89,12 +95,16 @@ body {
 
 .icons {
   margin-left: 10px; }
+  .icons:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition-duration: 0.5s; }
 
 .filters_header {
   position: relative; }
-
-.filters_header:hover .dropdown_menu {
-  display: block; }
+  .filters_header:hover .dropdown_menu {
+    display: block; }
 
 .dropdown_menu {
   position: absolute;
@@ -103,21 +113,33 @@ body {
   background: white;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
   border-radius: 3px;
-  z-index: 10; }
+  z-index: 10;
+  margin: 0;
+  padding: 10px; }
+  .dropdown_menu li {
+    margin-bottom: 3px; }
+    .dropdown_menu li:last-of-type {
+      margin-bottom: 0; }
+    .dropdown_menu li a {
+      color: #2222FA;
+      text-decoration: none; }
+      .dropdown_menu li a:hover {
+        color: #60C52B; }
 
-.dropdown_menu li a {
-  color: #2222FA;
-  text-decoration: none; }
-  .dropdown_menu li a:hover {
-    color: #60C52B; }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px; }
 
 .maininfo {
   display: flex;
   flex-direction: row;
   background: #FFFFFF;
-  border-radius-bottom-left: 5px;
-  border-radius-bottom-right: 5px;
   padding: 20px 30px; }
+
+.all {
+  background: #FFFFFF;
+  border-radius: 5px; }
 
 .web {
   width: 20%; }

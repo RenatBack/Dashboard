@@ -10,6 +10,8 @@ body
 	max-height: 35px
 	margin: 0 auto
 	width: 90%
+.header
+	padding-top: 20px
 .header .wrapper
 	display: flex
 	align-items: center
@@ -19,6 +21,7 @@ body
 	font-size: 24px
 	font-weight: 500
 	color: $color-text-black
+	margin: 0
 .filterbutton
 	display: flex
 	align-items: center
@@ -50,8 +53,6 @@ body
 	align-items: center
 	justify-content: space-between
 	background: $color-back
-	border-radius-top-left: 5px
-	border-radius-top-right: 5px
 	padding: 20px 30px
 	border-bottom: 1px solid $color-line
 .kparsericons
@@ -60,6 +61,8 @@ body
 	justify-content: space-between
 	margin-bottom: 10px
 	text-decoration: none
+	&:hover
+		color: blue
 .buttonkparser
 	background: $color-button-nav
 	color: $color-button-text-nav
@@ -74,16 +77,24 @@ body
 	-khtml-border-radius: 50%
 	margin-right: 10px
 	text-align: center
+	background: url('https://www.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.jpg')
+	background-size: cover
 .ssilkanav
 	text-decoration: none
 	color: $color-ssilka-black
 	margin-left: 9px
 .icons
 	margin-left: 10px
+	&:hover
+		-webkit-transform: scale(1.5)
+		-ms-transform: scale(1.5)
+		transform: scale(1.5)
+		transition-duration: 0.5s
 .filters_header
 	position: relative
-.filters_header:hover .dropdown_menu
-	display: block
+	&:hover
+		.dropdown_menu
+			display: block
 .dropdown_menu
 	position: absolute
 	display: none
@@ -92,19 +103,29 @@ body
 	box-shadow: 0 2px 15px rgba(0,0,0,.06)
 	border-radius: 3px
 	z-index: 10
-.dropdown_menu li a
-	color: $color-ssilka
-	text-decoration: none
-	&:hover
-		color: $color-ssilka2
+	margin: 0
+	padding: 10px
+	li
+		margin-bottom: 3px
+		&:last-of-type
+			margin-bottom: 0
+		a
+			color: $color-ssilka
+			text-decoration: none
+			&:hover
+				color: $color-ssilka2
+ul
+	list-style-type: none
+	padding: 0
+	margin: 5px
 .maininfo
 	display: flex
 	flex-direction: row
 	background: $color-back
-	border-radius-bottom-left: 5px
-	border-radius-bottom-right: 5px
 	padding: 20px 30px
-
+.all
+	background: #FFFFFF
+	border-radius: 5px
 .web
 	width: 20%
 .rank
