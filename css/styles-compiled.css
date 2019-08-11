@@ -9,6 +9,11 @@ body {
   margin: 0 auto;
   width: 90%; }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px; }
+
 .header {
   padding-top: 20px; }
 
@@ -125,11 +130,6 @@ body {
       text-decoration: none; }
       .dropdown_menu li a:hover {
         color: #60C52B; }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 5px; }
 
 .maininfo {
   display: flex;

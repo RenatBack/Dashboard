@@ -1,5 +1,104 @@
-$color-button-nav: #1A2E3B
-$color-button-text-nav: #FFFFFF
-$color-back: #FFFFFF
-$color-ssilka-black: #000000
-$color-line: #F7F9FA
+.header
+	padding-top: 20px
+.header .wrapper
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 20px
+.dash
+	font-size: 24px
+	font-weight: 500
+	color: $color-text-black
+	margin: 0
+.filterbutton
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-direction: row
+	width: 200px
+.filter
+	font-size: 12px
+	color: $color-text-grey
+	cursor: pointer
+.shared
+	color: $color-text-blue
+.whitex
+	width: 35px
+	height: 35px
+	background: $color-button
+	border-radius: 4px
+	border: 0
+	box-shadow: 0px 4px 10px rgba(0, 75, 255, 0.24)
+	margin-left: 20px
+	&:hover
+		background: $color-button2
+		-webkit-transform: scale(1.2)
+		-ms-transform: scale(1.2)
+		transform: scale(1.2)
+		transition-duration: 0.5s
+.navmenu
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background: $color-back
+	padding: 20px 30px
+	border-bottom: 1px solid $color-line
+.kparsericons
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 10px
+	text-decoration: none
+	&:hover
+		color: blue
+.buttonkparser
+	background: $color-button-nav
+	color: $color-button-text-nav
+	font-size: 13px
+	font-weight: 900
+	border: 0
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	-moz-border-radius: 50%
+	-webkit-border-radius: 50%
+	-khtml-border-radius: 50%
+	margin-right: 10px
+	text-align: center
+	background: url('https://www.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.jpg')
+	background-size: cover
+.ssilkanav
+	text-decoration: none
+	color: $color-ssilka-black
+	margin-left: 9px
+.icons
+	margin-left: 10px
+	&:hover
+		-webkit-transform: scale(1.5)
+		-ms-transform: scale(1.5)
+		transform: scale(1.5)
+		transition-duration: 0.5s
+.filters_header
+	position: relative
+	&:hover
+		.dropdown_menu
+			display: block
+.dropdown_menu
+	position: absolute
+	display: none
+	font-size: 12px
+	background: white
+	box-shadow: 0 2px 15px rgba(0,0,0,.06)
+	border-radius: 3px
+	z-index: 10
+	margin: 0
+	padding: 10px
+	li
+		margin-bottom: 3px
+		&:last-of-type
+			margin-bottom: 0
+		a
+			color: $color-ssilka
+			text-decoration: none
+			&:hover
+				color: $color-ssilka2
