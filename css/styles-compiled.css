@@ -163,6 +163,15 @@ ul {
   font-size: 15px;
   font-weight: 500;
   color: #DD4C3A; }
+  .main_percent-statusdown::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 3.5px 0 3.5px;
+    border-color: #DD4C3A transparent transparent transparent;
+    display: inline-block;
+    vertical-align: middle; }
 
 .rank {
   width: 30%;
@@ -183,7 +192,34 @@ ul {
     justify-content: flex-end;
     align-items: center; }
 
-.greyones {
+.ranky .greyones {
+  font-size: 12px;
+  color: #334D6E; }
+  .ranky .greyones::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    color: transparent;
+    border: 2px solid #004BFF;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px; }
+
+.last .greyones {
+  font-size: 12px;
+  color: #334D6E; }
+  .last .greyones::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #F18F1C;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 12px; }
+
+.traffic .greyones {
   font-size: 12px;
   color: #334D6E; }
 
@@ -198,6 +234,15 @@ ul {
 .down {
   font-size: 12px;
   color: #DD4C3A; }
+  .down::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 3.5px 0 3.5px;
+    border-color: #DD4C3A transparent transparent transparent;
+    display: inline-block;
+    vertical-align: middle; }
 
 .up {
   font-size: 12px;
@@ -234,14 +279,19 @@ ul {
   .ranky li span:first-of-type {
     margin-right: auto; }
 
-.lasty li::before {
-  content: "";
-  position: relative;
-  left: 10px;
-  width: 6px;
-  height: 6px;
-  background: transparent;
-  border-radius: 50px;
-  background: #4ed401; }
+.weby li {
+  justify-content: flex-end; }
+  .weby li span:first-of-type {
+    margin-right: auto; }
+
+.lasty li {
+  justify-content: flex-end; }
+  .lasty li span:first-of-type {
+    margin-right: auto; }
+
+.traffics li {
+  justify-content: flex-end; }
+  .traffics li span:first-of-type {
+    margin-right: auto; }
 
 /*# sourceMappingURL=styles-compiled.css.map */
