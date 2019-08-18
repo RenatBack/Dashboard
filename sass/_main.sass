@@ -1,6 +1,18 @@
 .maininfo
 	display: flex
 	padding: 20px 30px
+.maininfo>div
+	padding: 0 30px
+	border-right: 1px solid #F7F9FA
+	&:first-of-type
+		padding-left: 0
+	&:last-of-type
+		padding-right: 0
+		border: none
+.webstore
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
 .all
 	background: #FFFFFF
 	border-radius: 5px
@@ -27,6 +39,8 @@
 	font-size: 56px
 	font-weight: 500
 	color: #2ED47A
+	line-height: 60px
+
 .main_percent-statusdown
 	font-size: 15px
 	font-weight: 500
@@ -40,7 +54,7 @@
 		border-color: #DD4C3A transparent transparent transparent
 		display: inline-block
 		vertical-align: middle
-		margin: 0 5px 0 30px
+		margin: 0 5px 0 0
 .rank
 	width: 30%
 	border-right: 1px solid #F7F9FA
@@ -69,6 +83,8 @@
 		align-items: center
 		span
 			&:first-of-type
+.ranky
+	margin: 10px 0 0 0	
 .ranky .greyones
 	font-size: 12px
 	color: #334D6E
@@ -82,6 +98,49 @@
 		display: inline-block
 		vertical-align: middle
 		margin-right: 8px
+
+.ranky .greyones
+	&:nth-of-type(2)
+		font-size: 12px
+		color: #334D6E
+		&::before
+			content: ''
+			width: 2px
+			height: 2px
+			border-radius: 50%
+			color: transparent
+			border: 2px solid rgba(0, 75, 255, 0.75)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 8px
+.ranky .greyones
+	&:nth-of-type(3)
+		font-size: 12px
+		color: #334D6E
+		&::before
+			content: ''
+			width: 2px
+			height: 2px
+			border-radius: 50%
+			color: transparent
+			border: 2px solid rgba(0, 75, 255, 0.5)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 8px
+.ranky .greyones
+	&:last-of-type
+		font-size: 12px
+		color: #334D6E
+		&::before
+			content: ''
+			width: 2px
+			height: 2px
+			border-radius: 50%
+			color: transparent
+			border: 2px solid rgba(221, 76, 58, 0.5)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 8px
 .last .greyones
 	font-size: 12px
 	color: #334D6E
@@ -94,7 +153,22 @@
 		border-radius: 50%
 		vertical-align: middle
 		margin-right: 12px
-.traffic .greyones
+	
+.last .greyones
+	&:last-of-type
+		font-size: 12px
+		color: #334D6E
+		&::before
+			content: ''
+			display: inline-block
+			width: 6px
+			height: 6px
+			background: #27BE88
+			border-radius: 50%
+			vertical-align: middle
+			margin-right: 12px	
+			
+.traffics .greyones
 	font-size: 12px
 	color: #334D6E
 	&::before
@@ -103,10 +177,26 @@
 		height: 2px
 		border-radius: 50%
 		color: transparent
-		border: 2px solid #004BFF
+		border: 2px solid rgba(0, 75, 255, 0.7)
 		display: inline-block
 		vertical-align: middle
 		margin-right: 8px
+
+.traffics .greyones
+	&:last-of-type
+		font-size: 12px
+		color: #334D6E
+		&::before
+			content: ''
+			width: 2px
+			height: 2px
+			border-radius: 50%
+			color: transparent
+			border: 2px solid rgba(0, 75, 255, 0.5)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 8px
+
 .errors
 	font-size: 12px
 	color: #DD4C3A
@@ -116,7 +206,6 @@
 .down
 	font-size: 12px
 	color: #DD4C3A
-	margin-right: 20px
 	&::before
 		content: ''
 		width: 0
@@ -130,7 +219,6 @@
 .up
 	font-size: 12px
 	color: #42C697
-	margin-right: 20px
 	&::before
 		content: ''
 		width: 0
@@ -167,26 +255,32 @@
 	span
 		&:first-of-type
 			margin-right: auto
+.weby
+	margin: 10px 0 0 0
 .weby li
 	justify-content: flex-end
 	span
 		&:first-of-type
 			margin-right: auto
-
+.lasty
+	margin: 10px 0 0 0
 .lasty li
 	justify-content: flex-end
 	span
 		&:first-of-type
 			margin-right: auto
+.traffics
+	margin: 10px 0 0 0
 .traffics li
 	justify-content: flex-end
 	span
 		&:first-of-type
 			margin-right: auto
 .rankpic
-	margin-left: 10px
-	
+	width: 100%
+	margin-top: 30px
 .trafficpic
-	margin-left: 10px
+	width: 100%
+	margin-top: 60px
 	
 	
